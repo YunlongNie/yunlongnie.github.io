@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:20:59-07:00</updated>
+  <updated>2014-10-14T23:23:37-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -24,7 +24,7 @@
 
 <h2>Headings</h2>
 
-<pre><code class="{markdown, this is headings code}"># Markdown Syntax
+<pre><code># Markdown Syntax
 ## Headings 
 </code></pre>
 ]]></content>

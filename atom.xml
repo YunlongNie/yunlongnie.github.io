@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T22:57:28-07:00</updated>
+  <updated>2014-10-14T23:23:37-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown Cheat Sheet]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet/"/>
+    <updated>2014-10-14T23:00:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet</id>
+    <content type="html"><![CDATA[<h1>Markdown Syntax</h1>
+
+<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs.</p>
+
+<h2>Headings</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Markdown Syntax
+</span><span class='line'>## Headings </span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 1]]></title>
