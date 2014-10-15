@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:41:04-07:00</updated>
+  <updated>2014-10-14T23:46:39-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -18,48 +18,44 @@
     <link href="http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet/"/>
     <updated>2014-10-14T23:00:57-07:00</updated>
     <id>http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet</id>
-    <content type="html"><![CDATA[<h1>Markdown Cheet Sheet</h1>
+    <content type="html"><![CDATA[<h1 id="markdown-cheet-sheet">Markdown Cheet Sheet</h1>
 
-<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs.</p>
+<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs. </p>
 
-<h2>Headings</h2>
+<h2 id="headings">Headings</h2>
+<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #. 
+<code>
+# Markdown Syntax
+## Headings 
+</code></p>
 
-<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #.
-&#8220;`</p>
+<h2 id="paragraphs">Paragraphs</h2>
+<p>Like latex, new paragraph is seperated with the previous one using a blank row in between. </p>
 
-<h1>Markdown Syntax</h1>
+<p>This is another paragraph. </p>
 
-<h2>Headings</h2>
+<h2 id="bold-and-itshape">Bold and itshape</h2>
 
-<p>&#8220;`</p>
+<p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides. </p>
 
-<h2>Paragraphs</h2>
-
-<p>Like latex, new paragraph is seperated with the previous one using a blank row in between.</p>
-
-<p>This is another paragraph.</p>
-
-<h2>Bold and itshape</h2>
-
-<p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides.</p>
-
-<p><em>itshape</em> is done by adding one * on each side of the word.</p>
+<p><em>itshape</em> is done by adding one * on each side of the word. </p>
 
 <p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>this is a &lt;strong>bold&lt;/strong>
+</pre></td><td class='code'><pre><code class=''><span class='line'>this is a &lt;strong>bold&lt;/strong> 
 </span><span class='line'>this is a &lt;em>itshape&lt;/em></span></code></pre></td></tr></table></div></figure></p>
 
-<h2>Insert Code</h2>
+<h2 id="insert-code">Insert Code</h2>
 
-<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
-</span><span class='line'>&lt;span class='line-number'>2&lt;/span>
-</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>this is a &lt;strong>bold&lt;/strong>
-</span><span class='line'>&lt;/span>&lt;span class='line'>this is a &lt;em>itshape&lt;/em>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure></p>
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]&gt;</script>
+
 ]]></content>
   </entry>
   

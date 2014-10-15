@@ -77,50 +77,43 @@
 	
 	<div id="content" class="inner"><article class="post">
 	<h2 class="title">Markdown Syntax</h2>
-	<div class="entry-content"><h1>Markdown Cheet Sheet</h1>
+	<div class="entry-content"><h1 id="markdown-cheet-sheet">Markdown Cheet Sheet</h1>
 
-<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs.</p>
+<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs. </p>
 
-<h2>Headings</h2>
+<h2 id="headings">Headings</h2>
+<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #. 
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line"># Markdown Syntax
+</span><span class="line">## Headings </span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 
-<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #.</p>
+<h2 id="paragraphs">Paragraphs</h2>
+<p>Like latex, new paragraph is seperated with the previous one using a blank row in between. </p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Markdown Syntax
-</span><span class='line'>## Headings </span></code></pre></td></tr></table></div></figure>
+<p>This is another paragraph. </p>
 
+<h2 id="bold-and-itshape">Bold and itshape</h2>
 
-<h2>Paragraphs</h2>
+<p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides. </p>
 
-<p>Like latex, new paragraph is seperated with the previous one using a blank row in between.</p>
+<p><em>itshape</em> is done by adding one * on each side of the word. </p>
 
-<p>This is another paragraph.</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">this is a **bold** 
+</span><span class="line">this is a *itshape*</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h2>Bold and itshape</h2>
+<h2 id="insert-code">Insert Code</h2>
 
-<p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides.</p>
+<script type="math/tex; mode=display">% <![CDATA[
 
-<p><em>itshape</em> is done by adding one * on each side of the word.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>this is a **bold** 
-</span><span class='line'>this is a *itshape*</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Insert Code</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
-</span><span class='line'>&lt;span class='line-number'>2&lt;/span>
-</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>this is a **bold** 
-</span><span class='line'>&lt;/span>&lt;span class='line'>this is a *itshape*&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure>
-
-
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]></script>
 
 </div>
 
@@ -184,3 +177,20 @@
 
 </body>
 </html>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
