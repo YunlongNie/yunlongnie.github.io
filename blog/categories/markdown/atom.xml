@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:28:58-07:00</updated>
+  <updated>2014-10-14T23:33:59-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -38,6 +38,10 @@
 <p>Like latex, new paragraph is seperated with the previous one using a blank row in between.</p>
 
 <p>This is another paragraph.</p>
+
+<h2>Bold and itshape</h2>
+
+<p>Bold on one word or serveral words together can be achieved by adding ** on two sides.</p>
 ]]></content>
   </entry>
   
