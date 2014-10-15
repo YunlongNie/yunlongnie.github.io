@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:50:24-07:00</updated>
+  <updated>2014-10-14T23:51:06-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -66,14 +66,30 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="math/tex">% &lt;![CDATA[
-</span><span class='line'>
-</span><span class='line'>\begin{align}
-</span><span class='line'>\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-</span><span class='line'>\int_{t=1}^\alpha & \bigg \{xy\mid x\in A \mbox{ and } y\in B\bigg\} \\
-</span><span class='line'>\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-</span><span class='line'>\end{align}
-</span><span class='line'> %]]&gt;&lt;/script></span></code></pre></td></tr></table></div></figure></p>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>2&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>3&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>4&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>5&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>6&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>7&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>8&lt;/span>
+</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>&lt;script type="math/tex">% &lt;![CDATA[
+</span><span class='line'>&lt;/span>&lt;span class='line'>
+</span><span class='line'>&lt;/span>&lt;span class='line'>\begin{align}
+</span><span class='line'>&lt;/span>&lt;span class='line'>\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+</span><span class='line'>&lt;/span>&lt;span class='line'>\int_{t=1}^\alpha & \bigg \{xy\mid x\in A \mbox{ and } y\in B\bigg\} \\
+</span><span class='line'>&lt;/span>&lt;span class='line'>\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+</span><span class='line'>&lt;/span>&lt;span class='line'>\end{align}
+</span><span class='line'>&lt;/span>&lt;span class='line'> %]]&gt;&lt;/script>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure></p>
 
 ]]></content>
   </entry>
