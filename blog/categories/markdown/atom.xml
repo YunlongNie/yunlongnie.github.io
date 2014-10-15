@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: markdown | A place for notes]]></title>
+  <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
+  <link href="http://YunlongNie.github.io/"/>
+  <updated>2014-10-14T23:20:59-07:00</updated>
+  <id>http://YunlongNie.github.io/</id>
+  <author>
+    <name><![CDATA[Ben(Yunlong)]]></name>
+    <email><![CDATA[nyunlong@sfu.ca]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown Cheat Sheet]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet/"/>
+    <updated>2014-10-14T23:00:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet</id>
+    <content type="html"><![CDATA[<h1>Markdown Syntax</h1>
+
+<p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs.</p>
+
+<h2>Headings</h2>
+
+<pre><code class="{markdown, this is headings code}"># Markdown Syntax
+## Headings 
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
