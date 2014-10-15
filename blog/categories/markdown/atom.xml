@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:35:12-07:00</updated>
+  <updated>2014-10-14T23:36:17-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -43,7 +43,8 @@
 
 <p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides.</p>
 
-<blockquote><p>this is a <strong>bold</strong></p></blockquote>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>this is a &lt;strong>bold&lt;/strong></span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
