@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:23:37-07:00</updated>
+  <updated>2014-10-14T23:27:13-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -14,19 +14,26 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Markdown Cheat Sheet]]></title>
+    <title type="html"><![CDATA[Markdown Syntax]]></title>
     <link href="http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet/"/>
     <updated>2014-10-14T23:00:57-07:00</updated>
     <id>http://YunlongNie.github.io/blog/2014/10/14/markdown-cheat-sheet</id>
-    <content type="html"><![CDATA[<h1>Markdown Syntax</h1>
+    <content type="html"><![CDATA[<h1>Markdown Cheet Sheet</h1>
 
 <p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs.</p>
 
 <h2>Headings</h2>
 
-<pre><code># Markdown Syntax
-## Headings 
-</code></pre>
+<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #.
+&#8220;`</p>
+
+<h1>Markdown Syntax</h1>
+
+<h2>Headings</h2>
+
+<p>&#8220;`</p>
+
+<h2>Paragraphs</h2>
 ]]></content>
   </entry>
   
