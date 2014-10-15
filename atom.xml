@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T19:46:08-07:00</updated>
+  <updated>2014-10-14T19:48:47-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -26,6 +26,13 @@
 <li>first set up an account in <a href="https://github.com/">github</a>. You can follow the tutorial <a href="https://help.github.com/articles/set-up-git">here</a>.</li>
 <li>highly recommend you <a href="https://help.github.com/articles/generating-ssh-keys">set up the ssh key</a> too.</li>
 </ul>
+
+
+<figure class='code'><figcaption><span>this is a R code </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'>a <span class="o">=</span> <span class="m">1</span>
+</span><span class='line'>b  <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">1</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: First Blog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/first-blog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T19:46:08-07:00</updated>
+  <updated>2014-10-14T19:48:47-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -27,6 +27,11 @@
 <li>highly recommend you <a href="https://help.github.com/articles/generating-ssh-keys">set up the ssh key</a> too.</li>
 </ul>
 
+
+<pre><code class="R this is a R code ">
+a = 1
+b  = seq(1,10,1)
+</code></pre>
 ]]></content>
   </entry>
   
