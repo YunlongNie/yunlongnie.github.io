@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T20:20:55-07:00</updated>
+  <updated>2014-10-14T22:56:54-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Chapter 1]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/14/chapter-1/"/>
+    <updated>2014-10-14T22:47:44-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/14/chapter-1</id>
+    <content type="html"><![CDATA[<p>This is the first post. I will try to maintain this blog as often as I can. Hopefully, it grows as my PhD goes.</p>
+]]></content>
+  </entry>
   
 </feed>
