@@ -4,7 +4,7 @@
   <title><![CDATA[Category: markdown | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:38:39-07:00</updated>
+  <updated>2014-10-14T23:41:04-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -31,44 +31,35 @@
 
 <h2>Headings</h2>
 
-<pre><code>
-##Paragraphs
-Like latex, new paragraph is seperated with the previous one using a blank row in between. 
+<p>&#8220;`</p>
 
+<h2>Paragraphs</h2>
 
-This is another paragraph. 
+<p>Like latex, new paragraph is seperated with the previous one using a blank row in between.</p>
 
-## Bold and itshape
+<p>This is another paragraph.</p>
 
-**Bold** on one word or serveral words together can be achieved by adding ** on two sides. 
+<h2>Bold and itshape</h2>
 
-itshape is done by adding one * on each side of the word. 
+<p><strong>Bold</strong> on one word or serveral words together can be achieved by adding ** on two sides.</p>
 
-{% codeblock %}
-this is a **bold** 
-this is a *itshape*
-{% endcodeblock %}
+<p><em>itshape</em> is done by adding one * on each side of the word.</p>
 
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>this is a &lt;strong>bold&lt;/strong>
+</span><span class='line'>this is a &lt;em>itshape&lt;/em></span></code></pre></td></tr></table></div></figure></p>
 
+<h2>Insert Code</h2>
 
-## Insert Code
-
-
-{% codeblock %}
-
-{% codeblock %}
-this is a **bold** 
-this is a *itshape*
-{% endcodeblock %}
-</code></pre>
-
-<p>this is a R code
-&#8220;`</p>
-
-<p>{% endcodeblock %}</p>
-
-<pre><code class="{r,this is a R code}">this is a R code
-</code></pre>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
+</span><span class='line'>&lt;span class='line-number'>2&lt;/span>
+</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>this is a &lt;strong>bold&lt;/strong>
+</span><span class='line'>&lt;/span>&lt;span class='line'>this is a &lt;em>itshape&lt;/em>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
