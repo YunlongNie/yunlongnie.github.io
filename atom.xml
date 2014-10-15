@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-14T23:48:51-07:00</updated>
+  <updated>2014-10-14T23:49:55-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -23,11 +23,12 @@
 <p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs. </p>
 
 <h2 id="headings">Headings</h2>
-<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #. 
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<p>Headings start with a <em>#</em> symbol. The largest one comes with one # and the second large one with 2 #. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line"># Markdown Syntax
-</span><span class="line">## Headings </span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</pre></td><td class="code"><pre><code class=""><span class="line"># Markdown Syntax
+</span><span class="line">## Headings</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h2 id="paragraphs">Paragraphs</h2>
 <p>Like latex, new paragraph is seperated with the previous one using a blank row in between. </p>
