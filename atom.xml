@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T22:23:27-07:00</updated>
+  <updated>2014-10-16T22:26:44-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -38,7 +38,7 @@
 
 <h1 id="evaluate-bspline-system-at-given-time-points">evaluate bspline system at given time points</h1>
 
-<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. </p>
+<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. It also computes derivatives when a third argument <code>Lfdobj</code> is given. </p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -48,6 +48,11 @@
 <span class="line-number">6</span>
 <span class="line-number">7</span>
 <span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
 </pre></td><td class="code"><pre><code class="R"><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)</span>
 </span><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)[,</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">]</span>
 </span><span class="line">     bspl4.1 bspl4.2   bspl4.3   bspl4.4   bspl4.5   bspl4.6
@@ -56,6 +61,11 @@
 </span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span> <span class="m">0.0000000</span> <span class="m">0.1666667</span> <span class="m">0.6666667</span> <span class="m">0.1666667</span>
 </span><span class="line"><span class="o">&gt;</span> <span class="kp">rowSums</span><span class="p">(</span>eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">))</span>
 </span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>
+</span><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">,</span>Lfdobj<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</span><span class="line">     bspl4.1 bspl4.2 bspl4.3 bspl4.4 bspl4.5 bspl4.6 bspl4.7 bspl4.8
+</span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>       <span class="m">0</span>   <span class="m">-0.75</span>    <span class="m">0.25</span>     <span class="m">0.5</span>     <span class="m">0.0</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>
+</span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span>   <span class="m">-0.50</span>     <span class="m">0.0</span>     <span class="m">0.5</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>
+</span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span>    <span class="m">0.00</span>    <span class="m">-0.5</span>     <span class="m">0.0</span>     <span class="m">0.5</span>       <span class="m">0</span>       <span class="m">0</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 ]]></content>
