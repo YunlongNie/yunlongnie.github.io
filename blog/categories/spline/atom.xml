@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: spline | A place for notes]]></title>
+  <link href="http://YunlongNie.github.io/blog/categories/spline/atom.xml" rel="self"/>
+  <link href="http://YunlongNie.github.io/"/>
+  <updated>2014-10-16T22:13:24-07:00</updated>
+  <id>http://YunlongNie.github.io/</id>
+  <author>
+    <name><![CDATA[Ben(Yunlong)]]></name>
+    <email><![CDATA[nyunlong@sfu.ca]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Chapter 3 fdaWithRMat]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/16/chapter-3-fdawithrmat/"/>
+    <updated>2014-10-16T21:51:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/16/chapter-3-fdawithrmat</id>
+    <content type="html"><![CDATA[<h1 id="create-bspline-basis-functions">create bspline basis functions</h1>
+<p>There are normally four relevant arguments that defines a bspline basis system. </p>
+
+<ol>
+  <li>rangeval: gives the range of the bspline functions</li>
+  <li>nbasis: the number of basis functions in total</li>
+  <li>norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines</li>
+  <li>breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. For example, the code below specifies a bspline system with 13 basis functions. Each basis function is a cubic polynomial function. </li>
+  <li>In fact, one <strong>only</strong> needs to gives breaks and norder, then the function will know the nbasis, since nbasis = order + number of internal knots.</li>
+</ol>
+
+<p><code>
+create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,breaks = 0:10)
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
