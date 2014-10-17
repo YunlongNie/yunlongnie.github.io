@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T22:02:08-07:00</updated>
+  <updated>2014-10-16T22:05:17-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -22,6 +22,10 @@
 
 <h2 id="create-bspline-basis-functions">create bspline basis functions</h2>
 <p>There are normally four relevant arguments that defines a bspline basis system. 
+1. rangeval: gives the range of the bspline functions
+2. nbasis: the number of basis functions in total
+3. norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines
+4. breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. 
 &lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,breaks = 0:10)</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 ]]></content>
