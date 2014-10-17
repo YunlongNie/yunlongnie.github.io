@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T13:58:43-07:00</updated>
+  <updated>2014-10-17T14:23:45-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[turn off sidebar on new page]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/17/turn-off-sidebar-on-new-page/"/>
+    <updated>2014-10-17T14:21:22-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/17/turn-off-sidebar-on-new-page</id>
+    <content type="html"><![CDATA[<p>The <a href="http://yunlongnie.github.io/about/"><strong><em>about</em></strong></a> page do not contains anyside bar. One can turn it off here by modifying the markdown file under <code>source/about/index.markdown</code>.  Below is what the markdown script looks like: </p>
+
+<h2 id="section">&#8220;`</h2>
+<p>layout: page
+title: “me”
+date: 2014-10-14 20:09
+comments: false
+sharing: false
+footer: true
+sidebar: false
+—</p>
+
+<h3 id="graduate-student-in-sfu-phd">graduate student in SFU (PhD)</h3>
+
+<p>&#8220;`</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[no comment or sharing section]]></title>
