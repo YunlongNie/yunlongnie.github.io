@@ -95,7 +95,7 @@ There are normally four relevant arguments that defines a bspline basis system. 
   <li>nbasis: the number of basis functions in total</li>
   <li>norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines</li>
   <li>breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. For example, the code below specifies a bspline system with 13 basis functions. Each basis function is a cubic polynomial function. </li>
-  <li>In fact, one only needs to gives breaks and norder, then the function will know the nbasis, since nbasis = order + number of internal knots.</li>
+  <li>In fact, one <strong>only</strong> needs to gives breaks and norder, then the function will know the nbasis, since nbasis = order + number of internal knots.</li>
 </ol>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
