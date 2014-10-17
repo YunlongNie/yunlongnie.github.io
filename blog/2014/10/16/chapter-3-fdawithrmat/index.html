@@ -98,7 +98,7 @@ There are normally four relevant arguments that defines a bspline basis system. 
 
 <h1 id="evaluate-bspline-system-at-given-time-points">evaluate bspline system at given time points</h1>
 
-<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. It also computes derivatives when a third argument <code>Lfdobj</code> is given. </p>
+<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. It also computes derivatives when a third argument <code>Lfdobj</code> is given. In R, <code>predict</code> function can also do the same thing. </p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -113,6 +113,12 @@ There are normally four relevant arguments that defines a bspline basis system. 
 <span class="line-number">11</span>
 <span class="line-number">12</span>
 <span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
 </pre></td><td class="code"><pre><code class="R"><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)</span>
 </span><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)[,</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">]</span>
 </span><span class="line">     bspl4.1 bspl4.2   bspl4.3   bspl4.4   bspl4.5   bspl4.6
@@ -122,6 +128,12 @@ There are normally four relevant arguments that defines a bspline basis system. 
 </span><span class="line"><span class="o">&gt;</span> <span class="kp">rowSums</span><span class="p">(</span>eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">))</span>
 </span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>
 </span><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">,</span>Lfdobj<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</span><span class="line">     bspl4.1 bspl4.2 bspl4.3 bspl4.4 bspl4.5 bspl4.6 bspl4.7 bspl4.8
+</span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>       <span class="m">0</span>   <span class="m">-0.75</span>    <span class="m">0.25</span>     <span class="m">0.5</span>     <span class="m">0.0</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>
+</span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span>   <span class="m">-0.50</span>     <span class="m">0.0</span>     <span class="m">0.5</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>
+</span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span>    <span class="m">0.00</span>    <span class="m">-0.5</span>     <span class="m">0.0</span>     <span class="m">0.5</span>       <span class="m">0</span>       <span class="m">0</span>
+</span><span class="line"><span class="c1"># using predict function</span>
+</span><span class="line"><span class="o">&gt;</span> predict<span class="p">(</span>bspline_temp<span class="p">,</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span><span class="m">1</span><span class="p">)</span>
 </span><span class="line">     bspl4.1 bspl4.2 bspl4.3 bspl4.4 bspl4.5 bspl4.6 bspl4.7 bspl4.8
 </span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>       <span class="m">0</span>   <span class="m">-0.75</span>    <span class="m">0.25</span>     <span class="m">0.5</span>     <span class="m">0.0</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>
 </span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span>   <span class="m">-0.50</span>     <span class="m">0.0</span>     <span class="m">0.5</span>     <span class="m">0.0</span>       <span class="m">0</span>       <span class="m">0</span>

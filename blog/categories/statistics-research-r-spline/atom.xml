@@ -4,7 +4,7 @@
   <title><![CDATA[Category: statistics,research,r,spline | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/statistics-research-r-spline/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T22:26:44-07:00</updated>
+  <updated>2014-10-16T22:28:25-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -39,9 +39,9 @@ bspline_temp = create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,bre
 
 <h1 id="evaluate-bspline-system-at-given-time-points">evaluate bspline system at given time points</h1>
 
-<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. It also computes derivatives when a third argument <code>Lfdobj</code> is given. </p>
+<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. It also computes derivatives when a third argument <code>Lfdobj</code> is given. In R, <code>predict</code> function can also do the same thing. </p>
 
-<p><code>R
+<p>&#8220;`R
 eval.basis(evalarg=1:3,bspline_temp)
 eval.basis(evalarg=1:3,bspline_temp)[,1:6]
      bspl4.1 bspl4.2   bspl4.3   bspl4.4   bspl4.5   bspl4.6
@@ -55,7 +55,14 @@ eval.basis(evalarg=1:3,bspline_temp,Lfdobj=1)
 [1,]       0   -0.75    0.25     0.5     0.0     0.0       0       0
 [2,]       0    0.00   -0.50     0.0     0.5     0.0       0       0
 [3,]       0    0.00    0.00    -0.5     0.0     0.5       0       0
-</code></p>
+# using predict function
+&gt; predict(bspline_temp,1:3,1)
+     bspl4.1 bspl4.2 bspl4.3 bspl4.4 bspl4.5 bspl4.6 bspl4.7 bspl4.8
+[1,]       0   -0.75    0.25     0.5     0.0     0.0       0       0
+[2,]       0    0.00   -0.50     0.0     0.5     0.0       0       0
+[3,]       0    0.00    0.00    -0.5     0.0     0.5       0       0</p>
+
+<p>&#8220;`</p>
 
 ]]></content>
   </entry>
