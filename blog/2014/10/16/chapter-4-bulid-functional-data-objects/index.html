@@ -7,7 +7,7 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="object of the functional data class fd in R An object of fd combines the coefficients with the basis system. In the previous post book, fda, r, &hellip;">
+	<meta name="description" content="Chapter 4 Bulid Functional Data Objects book, fda, r, research object of the functional data class fd in R An object of fd combines the coefficients &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -16,18 +16,15 @@
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	
 </head>
-
 
 <body>
 	<header id="header" class="inner"><h1><a href="/">A place for notes</a></h1>
 <nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </nav>
 <nav id="mobile-nav">
@@ -36,8 +33,6 @@
 		<div class="container"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </div>
 	</div>
@@ -57,6 +52,7 @@
 		
 		
 		
+		
     
 		
 		
@@ -65,29 +61,33 @@
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
 		
-    
 	</div>
 	<form class="search" action="https://www.google.com/search" method="get">
 		<input class="alignright" type="text" name="q" results="0">
 		<input type="hidden" name="q" value="site:YunlongNie.github.io">
 	</form>
 </nav>
+	<div id="ie_explorer">
+		为了更好的浏览效果，请您使用
+		<a href="https://www.google.com/intl/zh-CN/chrome/browser/">chrome浏览器 </a>和
+		<a href="http://firefox.com.cn/download/">firefox浏览器</a>
+
+	</div>
+	<script type="text/javascript">
+		if(!(navigator.userAgent.indexOf("MSIE") > 0)){
+			document.getElementById('ie_explorer').style.display = 'none';
+		}
+	</script>
 
 </header>
 	
 		
 	
 	<div id="content" class="inner"><article class="post">
+	
 	<h2 class="title">Chapter 4 Bulid Functional Data Objects</h2>
-	<div class="entry-content"><h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
-
-<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
-
-</div>
-
-
-<div class="meta">
-	<div class="date">
+	<div class="meta">
+		<div class="date" style="float:left;">
 
 
 
@@ -100,42 +100,55 @@
 
 
 <time datetime="2014-10-16T22:44:57-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
+		<div class="tags" style="float:left;">
 
 
 	<a class='category' href='/blog/categories/book/'>book</a>, <a class='category' href='/blog/categories/fda/'>fda</a>, <a class='category' href='/blog/categories/r/'>r</a>, <a class='category' href='/blog/categories/research/'>research</a>
 
 
 </div>
-	
-</div>
-</article>
-
-	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-		
-		
-		<a class="addthis_button_tweet"></a>
-		
-		
 		
 	</div>
-	
+	<div class="entry-content" style="clear:both;"><h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
+
+<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
+
 </div>
 
 
 
 
+	
+		<div class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="float:left;">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_douban"></a>
+	<a class="jiathis_button_fb"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1352337342367360" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+	
 
-    <aside class="sidebar">
-      
-        
+	
+</article>
+
+
+<aside class="sidebar">
+  
+    
 
 
 
 
-      
-    </aside>
+  
+</aside>
+
 </div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
@@ -154,6 +167,27 @@
 
 
 
-
+<a href="#" id="dynamic_to_top" style="display: none;">UP</a>
+<script type="text/javascript">
+(function () {
+	var dynamic_to_top = $('#dynamic_to_top'),scrollHeight = 0;
+	window.onscroll = function() {
+		if (navigator.userAgent.indexOf('MSIE') >= 0) 
+			scrollHeight = document.documentElement.scrollTop;	
+		else 
+			scrollHeight = document.body.scrollTop;			
+		if (scrollHeight > 700) {
+			dynamic_to_top.fadeIn(500);
+		}
+		else{
+			dynamic_to_top.fadeOut(500);
+		}
+	};
+	dynamic_to_top.click(function(){	
+		$('html, body').stop().animate({scrollTop: 0}, 400);
+		return false;
+	});
+})();	
+</script>
 </body>
 </html>

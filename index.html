@@ -7,10 +7,10 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="add a new page website_log to
+	<meta name="description" content="Add Weblog on the Navigation Bar weblog add a new page website_log to
 step 1 1
 rake new_page['log'] step 2 add this to the navigation bar 1
-subl source/_includes/custom/navigation.html add &hellip;">
+subl &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -19,18 +19,15 @@ subl source/_includes/custom/navigation.html add &hellip;">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	
 </head>
-
 
 <body>
 	<header id="header" class="inner"><h1><a href="/">A place for notes</a></h1>
 <nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </nav>
 <nav id="mobile-nav">
@@ -39,8 +36,6 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		<div class="container"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </div>
 	</div>
@@ -60,6 +55,7 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 		
 		
+		
     
 		
 		
@@ -68,13 +64,23 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
 		
-    
 	</div>
 	<form class="search" action="https://www.google.com/search" method="get">
 		<input class="alignright" type="text" name="q" results="0">
 		<input type="hidden" name="q" value="site:YunlongNie.github.io">
 	</form>
 </nav>
+	<div id="ie_explorer">
+		为了更好的浏览效果，请您使用
+		<a href="https://www.google.com/intl/zh-CN/chrome/browser/">chrome浏览器 </a>和
+		<a href="http://firefox.com.cn/download/">firefox浏览器</a>
+
+	</div>
+	<script type="text/javascript">
+		if(!(navigator.userAgent.indexOf("MSIE") > 0)){
+			document.getElementById('ie_explorer').style.display = 'none';
+		}
+	</script>
 
 </header>
 	
@@ -101,7 +107,30 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 			Add Weblog on the Navigation Bar</a>
 	</h2>
-	<div class="entry-content">
+	<div class="meta">
+		<div class="date" style="float:left;">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-16T23:05:18-07:00" pubdate data-updated="true"></time></div>
+		<div class="tags" style="float:left;">
+
+
+	<a class='category' href='/blog/categories/weblog/'>weblog</a>
+
+
+</div>
+		
+	</div>
+	<div class="entry-content" style="clear:both;">
 		<h3 id="add-a-new-page-websitelog-to">add a new page website_log to</h3>
 <p>step 1</p>
 
@@ -134,29 +163,6 @@ subl source/_includes/custom/navigation.html add &hellip;">
 	</div>
 
 
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-16T23:05:18-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/weblog/'>weblog</a>
-
-
-</div>
-	
-</div>
 </article>
 
 
@@ -167,19 +173,8 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 			Chapter 4 Bulid Functional Data Objects</a>
 	</h2>
-	<div class="entry-content">
-		<h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
-
-<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
+	<div class="meta">
+		<div class="date" style="float:left;">
 
 
 
@@ -192,15 +187,26 @@ subl source/_includes/custom/navigation.html add &hellip;">
 
 
 <time datetime="2014-10-16T22:44:57-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
+		<div class="tags" style="float:left;">
 
 
 	<a class='category' href='/blog/categories/book/'>book</a>, <a class='category' href='/blog/categories/fda/'>fda</a>, <a class='category' href='/blog/categories/r/'>r</a>, <a class='category' href='/blog/categories/research/'>research</a>
 
 
 </div>
-	
-</div>
+		
+	</div>
+	<div class="entry-content" style="clear:both;">
+		<h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
+
+<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
+
+
+		
+		
+	</div>
+
+
 </article>
 
 
@@ -211,7 +217,30 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 			Chapter 3 fdaWithRMat</a>
 	</h2>
-	<div class="entry-content">
+	<div class="meta">
+		<div class="date" style="float:left;">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-16T21:51:57-07:00" pubdate data-updated="true"></time></div>
+		<div class="tags" style="float:left;">
+
+
+	<a class='category' href='/blog/categories/r/'>r</a>, <a class='category' href='/blog/categories/research/'>research</a>, <a class='category' href='/blog/categories/spline/'>spline</a>, <a class='category' href='/blog/categories/statistics/'>statistics</a>
+
+
+</div>
+		
+	</div>
+	<div class="entry-content" style="clear:both;">
 		<h1 id="create-bspline-basis-functions">create bspline basis functions</h1>
 
 <p>There are normally four relevant arguments that defines a bspline basis system. </p>
@@ -281,8 +310,18 @@ subl source/_includes/custom/navigation.html add &hellip;">
 	</div>
 
 
-<div class="meta">
-	<div class="date">
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/10/14/markdown-cheat-sheet/">
+		
+			Markdown Syntax</a>
+	</h2>
+	<div class="meta">
+		<div class="date" style="float:left;">
 
 
 
@@ -294,27 +333,17 @@ subl source/_includes/custom/navigation.html add &hellip;">
   
 
 
-<time datetime="2014-10-16T21:51:57-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
+<time datetime="2014-10-14T23:00:57-07:00" pubdate data-updated="true"></time></div>
+		<div class="tags" style="float:left;">
 
 
-	<a class='category' href='/blog/categories/r/'>r</a>, <a class='category' href='/blog/categories/research/'>research</a>, <a class='category' href='/blog/categories/spline/'>spline</a>, <a class='category' href='/blog/categories/statistics/'>statistics</a>
+	<a class='category' href='/blog/categories/markdown/'>markdown</a>
 
 
 </div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
 		
-		<a href="/blog/2014/10/14/markdown-cheat-sheet/">
-		
-			Markdown Syntax</a>
-	</h2>
-	<div class="entry-content">
+	</div>
+	<div class="entry-content" style="clear:both;">
 		<h1 id="markdown-cheet-sheet">Markdown Cheet Sheet</h1>
 
 <p>Markdown is a powerful and simple approach to document blog postings. It enables one to write in a plain text format and transfers them into clean, web-standard HTMLs. </p>
@@ -376,29 +405,6 @@ subl source/_includes/custom/navigation.html add &hellip;">
 	</div>
 
 
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-14T23:00:57-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/markdown/'>markdown</a>
-
-
-</div>
-	
-</div>
 </article>
 
 
@@ -409,17 +415,8 @@ subl source/_includes/custom/navigation.html add &hellip;">
 		
 			Chapter 1</a>
 	</h2>
-	<div class="entry-content">
-		<p>This is the first post. I will try to maintain this blog as often as I can. Hopefully, it grows as my PhD goes. </p>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
+	<div class="meta">
+		<div class="date" style="float:left;">
 
 
 
@@ -432,24 +429,32 @@ subl source/_includes/custom/navigation.html add &hellip;">
 
 
 <time datetime="2014-10-14T22:47:44-07:00" pubdate data-updated="true"></time></div>
-	<div class="tags">
+		<div class="tags" style="float:left;">
 
 
 	<a class='category' href='/blog/categories/nothing/'>nothing</a>
 
 
 </div>
-	
-</div>
+		
+	</div>
+	<div class="entry-content" style="clear:both;">
+		<p>This is the first post. I will try to maintain this blog as often as I can. Hopefully, it grows as my PhD goes. </p>
+
+
+		
+		
+	</div>
+
+
 </article>
+
 
 <nav id="pagenavi">
     
     
     <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav>
-
-</div>
+</nav></div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
     Ben(Yunlong)
@@ -467,6 +472,27 @@ subl source/_includes/custom/navigation.html add &hellip;">
 
 
 
-
+<a href="#" id="dynamic_to_top" style="display: none;">UP</a>
+<script type="text/javascript">
+(function () {
+	var dynamic_to_top = $('#dynamic_to_top'),scrollHeight = 0;
+	window.onscroll = function() {
+		if (navigator.userAgent.indexOf('MSIE') >= 0) 
+			scrollHeight = document.documentElement.scrollTop;	
+		else 
+			scrollHeight = document.body.scrollTop;			
+		if (scrollHeight > 700) {
+			dynamic_to_top.fadeIn(500);
+		}
+		else{
+			dynamic_to_top.fadeOut(500);
+		}
+	};
+	dynamic_to_top.click(function(){	
+		$('html, body').stop().animate({scrollTop: 0}, 400);
+		return false;
+	});
+})();	
+</script>
 </body>
 </html>

@@ -7,8 +7,7 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="graduate student in SFU (PhD)
-">
+	<meta name="description" content="graduate student in SFU (PhD) ">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -17,18 +16,15 @@
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	
 </head>
-
 
 <body>
 	<header id="header" class="inner"><h1><a href="/">A place for notes</a></h1>
 <nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </nav>
 <nav id="mobile-nav">
@@ -37,8 +33,6 @@
 		<div class="container"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/blog/categories/weblog">log</a></li>
 </ul>
 </div>
 	</div>
@@ -58,6 +52,7 @@
 		
 		
 		
+		
     
 		
 		
@@ -66,13 +61,23 @@
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
 		
-    
 	</div>
 	<form class="search" action="https://www.google.com/search" method="get">
 		<input class="alignright" type="text" name="q" results="0">
 		<input type="hidden" name="q" value="site:YunlongNie.github.io">
 	</form>
 </nav>
+	<div id="ie_explorer">
+		为了更好的浏览效果，请您使用
+		<a href="https://www.google.com/intl/zh-CN/chrome/browser/">chrome浏览器 </a>和
+		<a href="http://firefox.com.cn/download/">firefox浏览器</a>
+
+	</div>
+	<script type="text/javascript">
+		if(!(navigator.userAgent.indexOf("MSIE") > 0)){
+			document.getElementById('ie_explorer').style.display = 'none';
+		}
+	</script>
 
 </header>
 	
@@ -84,22 +89,25 @@
     
     <div class="entry-content"><h3 id="graduate-student-in-sfu-phd">graduate student in SFU (PhD)</h3>
 </div>
-</article>
 
+    
 	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-		
-		
-		<a class="addthis_button_tweet"></a>
-		
-		
-		
-	</div>
-	
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="float:left;">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_douban"></a>
+	<a class="jiathis_button_fb"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
 </div>
-
-
-
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1352337342367360" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+	
+	
+</article>
 
 
 <aside class="sidebar">
@@ -111,6 +119,9 @@
 
   
 </aside>
+
+
+
 </div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
@@ -129,6 +140,27 @@
 
 
 
-
+<a href="#" id="dynamic_to_top" style="display: none;">UP</a>
+<script type="text/javascript">
+(function () {
+	var dynamic_to_top = $('#dynamic_to_top'),scrollHeight = 0;
+	window.onscroll = function() {
+		if (navigator.userAgent.indexOf('MSIE') >= 0) 
+			scrollHeight = document.documentElement.scrollTop;	
+		else 
+			scrollHeight = document.body.scrollTop;			
+		if (scrollHeight > 700) {
+			dynamic_to_top.fadeIn(500);
+		}
+		else{
+			dynamic_to_top.fadeOut(500);
+		}
+	};
+	dynamic_to_top.click(function(){	
+		$('html, body').stop().animate({scrollTop: 0}, 400);
+		return false;
+	});
+})();	
+</script>
 </body>
 </html>
