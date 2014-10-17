@@ -8,7 +8,7 @@
 
 	
 	<meta name="description" content="Chapter 3 of the book fdawithRMat: create bspline basis functions
-There are normally four relevant arguments that defines a bspline basis system. 1. &hellip;">
+There are normally four relevant arguments that defines a bspline basis system. &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -81,11 +81,14 @@ There are normally four relevant arguments that defines a bspline basis system. 
 	<div class="entry-content"><h1 id="chapter-3-of-the-book-fdawithrmat">Chapter 3 of the book fdawithRMat:</h1>
 
 <h2 id="create-bspline-basis-functions">create bspline basis functions</h2>
-<p>There are normally four relevant arguments that defines a bspline basis system. 
-1.  rangeval: gives the range of the bspline functions
-2.  nbasis: the number of basis functions in total
-3.  norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines
-4.  breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. </p>
+<p>There are normally four relevant arguments that defines a bspline basis system. </p>
+
+<ol>
+  <li>rangeval: gives the range of the bspline functions</li>
+  <li>nbasis: the number of basis functions in total</li>
+  <li>norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines</li>
+  <li>breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. </li>
+</ol>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,breaks = 0:10)</span></code></pre></td></tr></table></div></figure></notextile></div>
