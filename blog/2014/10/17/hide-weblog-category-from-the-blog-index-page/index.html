@@ -7,7 +7,7 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content=" Hide Weblog Category From the Blog Index Page weblog This is the link ">
+	<meta name="description" content=" Hide Weblog Category From the Blog Index Page weblog This is the link UP ">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -127,11 +127,40 @@
 
 
 
- <footer>
-<!--  <ul>
- <li><a href="/blog/archives">Blog Archives</a></li>
- </ul> &#8211;>
- </footer>
+<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+<a href="#" id="dynamic_to_top" style="display: none;">UP</a>
+<script type="text/javascript">
+(function () {
+	var dynamic_to_top = $('#dynamic_to_top'),scrollHeight = 0;
+	window.onscroll = function() {
+		if (navigator.userAgent.indexOf('MSIE') >= 0) 
+			scrollHeight = document.documentElement.scrollTop;	
+		else 
+			scrollHeight = document.body.scrollTop;			
+		if (scrollHeight > 700) {
+			dynamic_to_top.fadeIn(500);
+		}
+		else{
+			dynamic_to_top.fadeOut(500);
+		}
+	};
+	dynamic_to_top.click(function(){	
+		$('html, body').stop().animate({scrollTop: 0}, 400);
+		return false;
+	});
+})();	
+</script>
 </div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
