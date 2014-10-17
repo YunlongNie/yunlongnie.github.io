@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T11:50:59-07:00</updated>
+  <updated>2014-10-17T11:59:44-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,99 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[my blog theme]]></title>
-    <link href="http://YunlongNie.github.io/blog/2014/10/17/my-blog-theme/"/>
-    <updated>2014-10-17T09:27:48-07:00</updated>
-    <id>http://YunlongNie.github.io/blog/2014/10/17/my-blog-theme</id>
-    <content type="html"><![CDATA[<h1 id="add-this-theme-into-github-repohttpsgithubcomyunlongnienewtheme">add this theme into github <a href="https://github.com/YunlongNie/newtheme">repo</a>.</h1>
-
-<h2 id="serveral-things-modified-in-this-theme">serveral things modified in this theme</h2>
-
-<ul>
-  <li><code>nil</code> class problem. </li>
-</ul>
-
-<p>Replace <code>nil</code> with <code>null</code> in two files: newtheme/source/atom.xml, source/_includes/custom/category_feed.xml</p>
-
-<ul>
-  <li>
-    <p>comtomized <em>favicon.png</em></p>
-  </li>
-  <li>
-    <p><strong>Mathjax</strong> for the latex 
-add the following code to the newtheme/source/_layouts/default.html</p>
-  </li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">&lt;!-- mathjax config similar to math.stackexchange --&gt;
-</span><span class="line">&lt;script type="text/x-mathjax-config"&gt;
-</span><span class="line">MathJax.Hub.Config({
-</span><span class="line">  jax: ["input/TeX", "output/HTML-CSS"],
-</span><span class="line">  tex2jax: {
-</span><span class="line">    inlineMath: [ ['$', '$'] ],
-</span><span class="line">    displayMath: [ ['$$', '$$']],
-</span><span class="line">    processEscapes: true,
-</span><span class="line">    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-</span><span class="line">  },
-</span><span class="line">  messageStyle: "none",
-</span><span class="line">  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-</span><span class="line">});
-</span><span class="line">&lt;/script&gt;
-</span><span class="line">&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"&gt;&lt;/script&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[add weblog on the navigation bar]]></title>
-    <link href="http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar/"/>
-    <updated>2014-10-16T23:05:18-07:00</updated>
-    <id>http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar</id>
-    <content type="html"><![CDATA[<h3 id="add-a-new-page-websitelog-to">add a new page website_log to</h3>
-<p>step 1</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">rake new_page['log']</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>step 2  add this to the navigation bar </p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">subl source/_includes/custom/navigation.html </span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>add one row to the file </p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">&lt;ul class="main"&gt;
-</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/blog/archives"&gt;Archives&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/about"&gt;about&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/blog/categories/weblog"&gt;log&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">&lt;/ul&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
