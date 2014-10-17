@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T09:34:17-07:00</updated>
+  <updated>2014-10-17T09:35:14-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -27,6 +27,10 @@
 </ul>
 
 <p>Replace <code>nil</code> with <code>null</code> in two files: newtheme/source/atom.xml, source/_includes/custom/category_feed.xml</p>
+
+<ul>
+  <li>comtomized <em>favicon.png</em></li>
+</ul>
 
 ]]></content>
   </entry>
