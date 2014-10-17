@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T11:59:44-07:00</updated>
+  <updated>2014-10-17T12:01:44-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[hide weblog category from the blog index page]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/17/hide-weblog-category-from-the-blog-index-page/"/>
+    <updated>2014-10-17T12:00:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/17/hide-weblog-category-from-the-blog-index-page</id>
+    <content type="html"><![CDATA[<p>This is the <a href="http://arshad.github.io/blog/2012/05/10/recipe-hiding-posts-from-the-octopress-front-page/">link</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[my blog theme]]></title>
