@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T08:02:04-07:00</updated>
+  <updated>2014-10-17T09:31:20-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[my blog theme]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/17/my-blog-theme/"/>
+    <updated>2014-10-17T09:27:48-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/17/my-blog-theme</id>
+    <content type="html"><![CDATA[<h1 id="add-this-theme-into-github-repohttpsgithubcomyunlongnienewtheme">add this theme into github <a href="https://github.com/YunlongNie/newtheme">repo</a>.</h1>
+
+<h2 id="serveral-things-modified-in-this-theme">serveral things modified in this theme</h2>
+
+<ol>
+  <li><code>nil</code> class problem. Replace <code>nil</code> with <code>null</code> in two files: newtheme/source/atom.xml, source/_includes/custom/category_feed.xml </li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[add weblog on the navigation bar]]></title>
