@@ -7,7 +7,7 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="a log for the change of this website add a new page website_log to 1 &lt;/pre&gt;&lt;/td&gt;&lt;td class='code'&gt;&lt;pre&gt;rake new_page[&#39;log &hellip;">
+	<meta name="description" content="a log for the change of this website add a new page website_log to 1 &lt;/pre&gt;&lt;/td&gt;&lt;td class='code'&gt;&lt;pre&gt;rake new_page['log']&lt &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -27,7 +27,7 @@
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
 	<li><a href="/about">about</a></li>
-	<li><a href="/log">about</a></li>
+	<li><a href="/log">log</a></li>
 </ul>
 </nav>
 <nav id="mobile-nav">
@@ -37,7 +37,7 @@
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
 	<li><a href="/about">about</a></li>
-	<li><a href="/log">about</a></li>
+	<li><a href="/log">log</a></li>
 </ul>
 </div>
 	</div>
@@ -86,30 +86,29 @@
 <h3 id="add-a-new-page-websitelog-to">add a new page website_log to</h3>
 <ol>
   <li>
-    <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+    <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td></tr></table></div></figure></notextile></div>
   </li>
 </ol>
-<p>&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="bash"><span class="line">rake new_page<span class="o">[</span><span class="s1">&#39;log&#39;</span><span class="o">]</span>
-</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;
+<p>&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">rake new_page['log']</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;
 2. add this to the navigation bar 
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span></span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="bash"><span class="line">subl <span class="nb">source</span>/_includes/custom/navigation.html
-</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;
-add one row to the file 
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span></span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">subl source/_includes/custom/navigation.html </span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;
+add one row to the file </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
 <span class="line-number">6</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="bash"><span class="line">&lt;ul <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;main&quot;</span>&gt;
-</span><span class="line">	&lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;/&quot;</span>&gt;Blog&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;/blog/archives&quot;</span>&gt;Archives&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;/about&quot;</span>&gt;about&lt;/a&gt;&lt;/li&gt;
-</span><span class="line">	&lt;li&gt;&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;/log&quot;</span>&gt;about&lt;/a&gt;&lt;/li&gt;
+</pre></td><td class="code"><pre><code class=""><span class="line">&lt;ul class="main"&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="/blog/archives"&gt;Archives&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="/about"&gt;about&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="/log"&gt;about&lt;/a&gt;&lt;/li&gt;
 </span><span class="line">&lt;/ul&gt;
-</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 </div>
 </article>
