@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T23:07:03-07:00</updated>
+  <updated>2014-10-16T23:08:40-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -38,7 +38,7 @@ subl source/_includes/custom/navigation.html
 	&lt;li&gt;<a href="/">Blog</a>&lt;/li&gt;
 	&lt;li&gt;<a href="/blog/archives">Archives</a>&lt;/li&gt;
 	&lt;li&gt;<a href="/about">about</a>&lt;/li&gt;
-	&lt;li&gt;<a href="/log">about</a>&lt;/li&gt;
+	&lt;li&gt;<a href="/blog/categories/weblog">log</a>&lt;/li&gt;
 &lt;/ul&gt;</p>
 
 <p>&#8220;`</p>
