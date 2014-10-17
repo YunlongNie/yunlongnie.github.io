@@ -7,8 +7,8 @@
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="Chapter 3 of the book fdawithRMat: create bspline basis functions
-There are normally four relevant arguments that defines a bspline basis system. &hellip;">
+	<meta name="description" content="create bspline basis functions
+There are normally four relevant arguments that defines a bspline basis system. rangeval: gives the range of the &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -87,16 +87,15 @@ There are normally four relevant arguments that defines a bspline basis system. 
 			Chapter 3 fdaWithRMat</a>
 	</h2>
 	<div class="entry-content">
-		<h1 id="chapter-3-of-the-book-fdawithrmat">Chapter 3 of the book fdawithRMat:</h1>
-
-<h2 id="create-bspline-basis-functions">create bspline basis functions</h2>
+		<h1 id="create-bspline-basis-functions">create bspline basis functions</h1>
 <p>There are normally four relevant arguments that defines a bspline basis system. </p>
 
 <ol>
   <li>rangeval: gives the range of the bspline functions</li>
   <li>nbasis: the number of basis functions in total</li>
   <li>norder: the order of the bspline, which equals one plus the degree. the default is set to be 4, i.e., cubic splines</li>
-  <li>breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. </li>
+  <li>breaks: the breaking points. It must satisfy that the first and last breaks are the boundary of the rangeval. For example, the code below specifies a bspline system with 13 basis functions. Each basis function is a cubic polynomial function. </li>
+  <li>In fact, one only needs to gives breaks and norder, then the function will know the nbasis, since nbasis = order + number of internal knots.</li>
 </ol>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
