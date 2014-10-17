@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T22:13:24-07:00</updated>
+  <updated>2014-10-16T22:22:19-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -30,7 +30,29 @@
 </ol>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,breaks = 0:10)</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">bspline_temp = create.bspline.basis(rangeval = c(0,10), nbasis = 13,norder=4,breaks = 0:10)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ol>
+  <li>one property of bspline basis system is that the sum of B-spline basis function at any given time t sum up to 1. </li>
+</ol>
+
+<h1 id="evaluate-bspline-system-at-given-time-points">evaluate bspline system at given time points</h1>
+
+<p>Once the bspline system is created, one might be interested in checking each basis function values at a given time t. This can be achieved by <code>eval.basis</code> function in R. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="R"><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)</span>
+</span><span class="line">eval.basis<span class="p">(</span>evalarg1<span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">)[,</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">]</span>
+</span><span class="line">     bspl4.1 bspl4.2   bspl4.3   bspl4.4   bspl4.5   bspl4.6
+</span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.25</span> <span class="m">0.5833333</span> <span class="m">0.1666667</span> <span class="m">0.0000000</span> <span class="m">0.0000000</span>
+</span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span> <span class="m">0.1666667</span> <span class="m">0.6666667</span> <span class="m">0.1666667</span> <span class="m">0.0000000</span>
+</span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span> <span class="m">0.0000000</span> <span class="m">0.1666667</span> <span class="m">0.6666667</span> <span class="m">0.1666667</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 ]]></content>
   </entry>
   
