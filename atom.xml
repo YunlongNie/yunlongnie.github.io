@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T22:28:25-07:00</updated>
+  <updated>2014-10-16T22:49:15-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -14,11 +14,24 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/16/chapter-4-bulid-functional-data-objects/"/>
+    <updated>2014-10-16T22:44:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/16/chapter-4-bulid-functional-data-objects</id>
+    <content type="html"><![CDATA[<h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
+
+<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Chapter 3 fdaWithRMat]]></title>
     <link href="http://YunlongNie.github.io/blog/2014/10/16/chapter-3-fdawithrmat/"/>
     <updated>2014-10-16T21:51:57-07:00</updated>
     <id>http://YunlongNie.github.io/blog/2014/10/16/chapter-3-fdawithrmat</id>
     <content type="html"><![CDATA[<h1 id="create-bspline-basis-functions">create bspline basis functions</h1>
+
 <p>There are normally four relevant arguments that defines a bspline basis system. </p>
 
 <ol>
@@ -65,7 +78,7 @@
 </span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.25</span> <span class="m">0.5833333</span> <span class="m">0.1666667</span> <span class="m">0.0000000</span> <span class="m">0.0000000</span>
 </span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span> <span class="m">0.1666667</span> <span class="m">0.6666667</span> <span class="m">0.1666667</span> <span class="m">0.0000000</span>
 </span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>       <span class="m">0</span>    <span class="m">0.00</span> <span class="m">0.0000000</span> <span class="m">0.1666667</span> <span class="m">0.6666667</span> <span class="m">0.1666667</span>
-</span><span class="line"><span class="o">&gt;</span> <span class="kp">rowSums</span><span class="p">(</span>eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">))</span>
+</span><span class="line"><span class="kp">rowSums</span><span class="p">(</span>eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">))</span>
 </span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>
 </span><span class="line">eval.basis<span class="p">(</span>evalarg<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span>bspline_temp<span class="p">,</span>Lfdobj<span class="o">=</span><span class="m">1</span><span class="p">)</span>
 </span><span class="line">     bspl4.1 bspl4.2 bspl4.3 bspl4.4 bspl4.5 bspl4.6 bspl4.7 bspl4.8

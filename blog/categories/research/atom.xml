@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: research, | A place for notes]]></title>
+  <link href="http://YunlongNie.github.io/blog/categories/research/atom.xml" rel="self"/>
+  <link href="http://YunlongNie.github.io/"/>
+  <updated>2014-10-16T22:49:15-07:00</updated>
+  <id>http://YunlongNie.github.io/</id>
+  <author>
+    <name><![CDATA[Ben(Yunlong)]]></name>
+    <email><![CDATA[nyunlong@sfu.ca]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/16/chapter-4-bulid-functional-data-objects/"/>
+    <updated>2014-10-16T22:44:57-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/16/chapter-4-bulid-functional-data-objects</id>
+    <content type="html"><![CDATA[<h1 id="object-of-the-functional-data-class-fd-in-r">object of the <em>functional data</em> class <code>fd</code> in R</h1>
+
+<p>An object of fd combines the coefficients with the basis system. In the previous post</p>
+
+]]></content>
+  </entry>
+  
+</feed>
