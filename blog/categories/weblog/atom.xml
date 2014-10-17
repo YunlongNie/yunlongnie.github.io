@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T09:35:14-07:00</updated>
+  <updated>2014-10-17T09:39:43-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -29,9 +29,31 @@
 <p>Replace <code>nil</code> with <code>null</code> in two files: newtheme/source/atom.xml, source/_includes/custom/category_feed.xml</p>
 
 <ul>
-  <li>comtomized <em>favicon.png</em></li>
+  <li>
+    <p>comtomized <em>favicon.png</em></p>
+  </li>
+  <li>
+    <p><strong>Mathjax</strong> for the latex 
+add the following code to the newtheme/source/_layouts/default.html
+<code>html
+&lt;!-- mathjax config similar to math.stackexchange --&gt;
+&lt;script type="text/x-mathjax-config"&gt;
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+ inlineMath: [ ['$', '$'] ],
+ displayMath: [ ['$$', '$$']],
+ processEscapes: true,
+ skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+&lt;/script&gt;
+&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"&gt;&lt;/script&gt;
+</code></p>
+  </li>
 </ul>
-
 ]]></content>
   </entry>
   
