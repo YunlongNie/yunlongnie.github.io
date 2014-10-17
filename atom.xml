@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-16T23:02:14-07:00</updated>
+  <updated>2014-10-16T23:07:03-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[add weblog on the navigation bar]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar/"/>
+    <updated>2014-10-16T23:05:18-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar</id>
+    <content type="html"><![CDATA[<h3 id="add-a-new-page-websitelog-to">add a new page website_log to</h3>
+<p>step 1</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake new_page['log']</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>step 2  add this to the navigation bar </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">subl source/_includes/custom/navigation.html </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>add one row to the file </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">&lt;ul class="main"&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/blog/archives"&gt;Archives&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/about"&gt;about&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">	&lt;li&gt;&lt;a href="http://YunlongNie.github.io/log"&gt;about&lt;/a&gt;&lt;/li&gt;
+</span><span class="line">&lt;/ul&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>

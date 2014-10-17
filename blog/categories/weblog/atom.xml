@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: weblog | A place for notes]]></title>
+  <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
+  <link href="http://YunlongNie.github.io/"/>
+  <updated>2014-10-16T23:07:03-07:00</updated>
+  <id>http://YunlongNie.github.io/</id>
+  <author>
+    <name><![CDATA[Ben(Yunlong)]]></name>
+    <email><![CDATA[nyunlong@sfu.ca]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[add weblog on the navigation bar]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar/"/>
+    <updated>2014-10-16T23:05:18-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/16/add-weblog-on-the-navigation-bar</id>
+    <content type="html"><![CDATA[<h3 id="add-a-new-page-websitelog-to">add a new page website_log to</h3>
+<p>step 1</p>
+
+<p><code>
+rake new_page['log']
+</code></p>
+
+<p>step 2  add this to the navigation bar </p>
+
+<p><code>
+subl source/_includes/custom/navigation.html 
+</code></p>
+
+<p>add one row to the file </p>
+
+<p>&#8220;`
+&lt;ul class=&#8221;main&#8221;&gt;
+	&lt;li&gt;<a href="/">Blog</a>&lt;/li&gt;
+	&lt;li&gt;<a href="/blog/archives">Archives</a>&lt;/li&gt;
+	&lt;li&gt;<a href="/about">about</a>&lt;/li&gt;
+	&lt;li&gt;<a href="/log">about</a>&lt;/li&gt;
+&lt;/ul&gt;</p>
+
+<p>&#8220;`</p>
+]]></content>
+  </entry>
+  
+</feed>
