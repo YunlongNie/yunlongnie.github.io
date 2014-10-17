@@ -4,7 +4,7 @@
   <title><![CDATA[Category: weblog | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/weblog/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T12:01:44-07:00</updated>
+  <updated>2014-10-17T12:05:10-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[no comment or sharing section]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/17/no-comment-or-sharing-section/"/>
+    <updated>2014-10-17T12:02:33-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/17/no-comment-or-sharing-section</id>
+    <content type="html"><![CDATA[<p>The sharing and commenting function is cancelled by adding lines into <code>Rakefile</code> file for the <code>rake new_page</code> and <code>rake new_post</code> sections.  </p>
+
+<p>&#8220;`
+   post.puts “comments: false”
+   post.puts “sharing: false”</p>
+
+<p>&#8220;`</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hide weblog category from the blog index page]]></title>

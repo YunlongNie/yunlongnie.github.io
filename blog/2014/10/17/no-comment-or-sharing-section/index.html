@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>my blog theme - A place for notes</title>
+	<title>no comment or sharing section - A place for notes</title>
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="My Blog Theme weblog add this theme into github repo. serveral things modified in this theme nil class problem. Replace nil with null in two files: &hellip;">
+	<meta name="description" content="No Comment or Sharing Section weblog The sharing and commenting function is cancelled by adding lines into Rakefile file for the rake new_page and &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -89,7 +89,7 @@
 	
 	<div id="content" class="inner"><article class="post">
 	
-	<h2 class="title">My Blog Theme</h2>
+	<h2 class="title">No Comment or Sharing Section</h2>
 	<div class="meta">
 		<div class="date" style="float:left;">
 
@@ -103,7 +103,7 @@
   
 
 
-<time datetime="2014-10-17T09:27:48-07:00" pubdate data-updated="true"></time></div>
+<time datetime="2014-10-17T12:02:33-07:00" pubdate data-updated="true"></time></div>
 		<div class="tags" style="float:left;">
 
 
@@ -113,57 +113,13 @@
 </div>
 		
 	</div>
-	<div class="entry-content" style="clear:both;"><h1 id="add-this-theme-into-github-repohttpsgithubcomyunlongnienewtheme">add this theme into github <a href="https://github.com/YunlongNie/newtheme">repo</a>.</h1>
-
-<h2 id="serveral-things-modified-in-this-theme">serveral things modified in this theme</h2>
-
-<ul>
-  <li><code>nil</code> class problem. </li>
-</ul>
-
-<p>Replace <code>nil</code> with <code>null</code> in two files: newtheme/source/atom.xml, source/_includes/custom/category_feed.xml</p>
-
-<ul>
-  <li>
-    <p>comtomized <em>favicon.png</em></p>
-  </li>
-  <li>
-    <p><strong>Mathjax</strong> for the latex 
-add the following code to the newtheme/source/_layouts/default.html</p>
-  </li>
-</ul>
+	<div class="entry-content" style="clear:both;"><p>The sharing and commenting function is cancelled by adding lines into <code>Rakefile</code> file for the <code>rake new_page</code> and <code>rake new_post</code> sections.  </p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">&lt;!-- mathjax config similar to math.stackexchange --&gt;
-</span><span class="line">&lt;script type="text/x-mathjax-config"&gt;
-</span><span class="line">MathJax.Hub.Config({
-</span><span class="line">  jax: ["input/TeX", "output/HTML-CSS"],
-</span><span class="line">  tex2jax: {
-</span><span class="line">    inlineMath: [ ['$', '$'] ],
-</span><span class="line">    displayMath: [ ['$$', '$$']],
-</span><span class="line">    processEscapes: true,
-</span><span class="line">    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-</span><span class="line">  },
-</span><span class="line">  messageStyle: "none",
-</span><span class="line">  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-</span><span class="line">});
-</span><span class="line">&lt;/script&gt;
-</span><span class="line">&lt;script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"&gt;&lt;/script&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
-
+</pre></td><td class="code"><pre><code class=""><span class="line">   post.puts "comments: false"
+</span><span class="line">   post.puts "sharing: false"
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </div>
 
 
@@ -193,14 +149,10 @@ add the following code to the newtheme/source/_layouts/default.html</p>
  <ul class="pager">
       
       <li class="previous"><a class="basic-alignment left"
-        href="/blog/2014/10/16/add-weblog-on-the-navigation-bar/" title="Previous Post:
-        add weblog on the navigation bar">&laquo; add weblog on the navigation bar</a></li>
+        href="/blog/2014/10/17/hide-weblog-category-from-the-blog-index-page/" title="Previous Post:
+        hide weblog category from the blog index page">&laquo; hide weblog category from the blog index page</a></li>
       
       <li><a href="/blog/archives">Blog Archives</a></li>
-      
-      <li class="next"><a class="basic-alignment right" href="/blog/2014/10/17/hide-weblog-category-from-the-blog-index-page/"
-        title="Next Post: hide weblog category from the blog index page">hide weblog category from the blog index page
-        &raquo;</a></li>
       
     </ul>
     
