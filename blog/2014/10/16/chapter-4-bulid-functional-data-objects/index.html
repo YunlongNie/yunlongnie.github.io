@@ -130,7 +130,32 @@
 <p>Note that adding coefficients in is different from evaluate a bspline system at a given time point $t$. Suppose $f(x)$ is approximated by a bspline system with basis functions denoted by $\phi_i(x)$. That is, 
 <script type="math/tex">f(x) \approx \sum_{i=1}^m \beta_i \phi_i(x). </script></p>
 
-<p>Thus, evaluating $f(t)$ means that given $t = t_0$ compute $f(t_0)$, which is essentially a vector. Each element in the vector stands for the basis function value when $t = t_0$, i.e., $\phi_i(t_0)$. On the other hand, supply coefficients into the bspline system amounts to given the value of $\beta_i$. </p>
+<p>Thus, evaluating $f(t)$ means that given $t = t_0$ compute $f(t_0)$, which is essentially a vector. Each element in the vector stands for the basis function value when $t = t_0$, i.e., $\phi_i(t_0)$. On the other hand, supply coefficients into the bspline system amounts to given the value of $\beta_i$.  Once the coefficients are given, one can evaluate the smoothing system as a single function given $t=t_0$ using R function <code>eval.fd()</code>. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">unitRng = c(0,1)
+</span><span class="line">bspl2 = create.bspline.basis(unitRng, norder=2)
+</span><span class="line">tstFn1 = fd(c(-1, 2), bspl2)
+</span><span class="line">t0 = seq(0,1,by=0.2)
+</span><span class="line">eval.fd(t0,tstFn1 )
+</span><span class="line">     reps 1
+</span><span class="line">[1,]   -1.0
+</span><span class="line">[2,]   -0.4
+</span><span class="line">[3,]    0.2
+</span><span class="line">[4,]    0.8
+</span><span class="line">[5,]    1.4
+</span><span class="line">[6,]    2.0</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 </div>
 
