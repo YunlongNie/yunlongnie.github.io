@@ -4,7 +4,7 @@
   <title><![CDATA[Category: r | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T20:33:57-07:00</updated>
+  <updated>2014-10-17T20:46:10-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -58,6 +58,11 @@ eval.fd(t0,tstFn1)
 [5,]      3
 [6,]      0
 </code></p>
+
+<h2 id="linear-differential-operator-or-lfd-class">Linear Differential Operator or <em>Lfd</em> Class</h2>
+
+<p>The notation $Lx$ refers to the application of a linear differential operator L to a function $x$. In general, 
+<script type="math/tex">Lx(t) = \beta_0(t) x(t) + \beta_1(t) Dx(t) + \ldots + \beta_{m-1}(t) D^{m-1} x(t)+ D^{m} x(t) </script></p>
 
 ]]></content>
   </entry>
