@@ -4,7 +4,7 @@
   <title><![CDATA[Category: research | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T20:31:29-07:00</updated>
+  <updated>2014-10-17T20:32:37-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -36,7 +36,7 @@ tempfd = fd(coefmat,bspline_temp)</p>
 
 <p>Thus, evaluating $f(t)$ means that given $t = t_0$ compute $f(t_0)$, which is essentially a vector. Each element in the vector stands for the basis function value when $t = t_0$, i.e., $\phi_i(t_0)$. On the other hand, supply coefficients into the bspline system amounts to given the value of $\beta_i$.  Once the coefficients are given, one can evaluate the smoothing system as a single function given $t=t_0$ using R function <code>eval.fd()</code>. </p>
 
-<p><code>
+<p><code>R
 unitRng = c(0,1)
 bspl2 = create.bspline.basis(unitRng, norder=2)
 tstFn1 = fd(c(-1, 2), bspl2)

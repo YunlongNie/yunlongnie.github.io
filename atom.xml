@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T20:31:29-07:00</updated>
+  <updated>2014-10-17T20:32:37-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -35,7 +35,7 @@
 
 <p>Thus, evaluating $f(t)$ means that given $t = t_0$ compute $f(t_0)$, which is essentially a vector. Each element in the vector stands for the basis function value when $t = t_0$, i.e., $\phi_i(t_0)$. On the other hand, supply coefficients into the bspline system amounts to given the value of $\beta_i$.  Once the coefficients are given, one can evaluate the smoothing system as a single function given $t=t_0$ using R function <code>eval.fd()</code>. </p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -47,18 +47,19 @@
 <span class="line-number">10</span>
 <span class="line-number">11</span>
 <span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">unitRng = c(0,1)
-</span><span class="line">bspl2 = create.bspline.basis(unitRng, norder=2)
-</span><span class="line">tstFn1 = fd(c(-1, 2), bspl2)
-</span><span class="line">t0 = seq(0,1,by=0.2)
-</span><span class="line">eval.fd(t0,tstFn1 )
-</span><span class="line">     reps 1
-</span><span class="line">[1,]   -1.0
-</span><span class="line">[2,]   -0.4
-</span><span class="line">[3,]    0.2
-</span><span class="line">[4,]    0.8
-</span><span class="line">[5,]    1.4
-</span><span class="line">[6,]    2.0</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class="R"><span class="line">unitRng <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="p">)</span>
+</span><span class="line">bspl2 <span class="o">=</span> create.bspline.basis<span class="p">(</span>unitRng<span class="p">,</span> norder<span class="o">=</span><span class="m">2</span><span class="p">)</span>
+</span><span class="line">tstFn1 <span class="o">=</span> fd<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="m">-1</span><span class="p">,</span> <span class="m">2</span><span class="p">),</span> bspl2<span class="p">)</span>
+</span><span class="line">t0 <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">1</span><span class="p">,</span>by<span class="o">=</span><span class="m">0.2</span><span class="p">)</span>
+</span><span class="line">eval.fd<span class="p">(</span>t0<span class="p">,</span>tstFn1 <span class="p">)</span>
+</span><span class="line">     reps <span class="m">1</span>
+</span><span class="line"><span class="p">[</span><span class="m">1</span><span class="p">,]</span>   <span class="m">-1.0</span>
+</span><span class="line"><span class="p">[</span><span class="m">2</span><span class="p">,]</span>   <span class="m">-0.4</span>
+</span><span class="line"><span class="p">[</span><span class="m">3</span><span class="p">,]</span>    <span class="m">0.2</span>
+</span><span class="line"><span class="p">[</span><span class="m">4</span><span class="p">,]</span>    <span class="m">0.8</span>
+</span><span class="line"><span class="p">[</span><span class="m">5</span><span class="p">,]</span>    <span class="m">1.4</span>
+</span><span class="line"><span class="p">[</span><span class="m">6</span><span class="p">,]</span>    <span class="m">2.0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 ]]></content>
   </entry>
