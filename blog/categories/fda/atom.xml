@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fda | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/fda/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T20:32:37-07:00</updated>
+  <updated>2014-10-17T20:33:57-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -41,7 +41,7 @@ unitRng = c(0,1)
 bspl2 = create.bspline.basis(unitRng, norder=2)
 tstFn1 = fd(c(-1, 2), bspl2)
 t0 = seq(0,1,by=0.2)
-eval.fd(t0,tstFn1 )
+eval.fd(t0,tstFn1)
      reps 1
 [1,]   -1.0
 [2,]   -0.4
@@ -49,6 +49,14 @@ eval.fd(t0,tstFn1 )
 [4,]    0.8
 [5,]    1.4
 [6,]    2.0
+&gt; eval.fd(t0,tstFn1,1) # evaluate the function data object tstFn1 first derivative. 
+     reps 1
+[1,]      3
+[2,]      3
+[3,]      3
+[4,]      3
+[5,]      3
+[6,]      0
 </code></p>
 
 ]]></content>
