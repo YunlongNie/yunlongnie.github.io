@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fda | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/fda/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T15:36:25-07:00</updated>
+  <updated>2014-10-17T17:01:20-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -34,7 +34,7 @@ tempfd = fd(coefmat,bspline_temp)</p>
 <p>Note that adding coefficients in is different from evaluate a bspline system at a given time point $t$. Suppose $f(x)$ is approximated by a bspline system with basis functions denoted by $\phi_i(x)$. That is, 
 <script type="math/tex">f(x) \approx \sum_{i=1}^m \beta_i \phi_i(x). </script></p>
 
-<p>Thus, evaluating f(t)$</p>
+<p>Thus, evaluating $f(t)$ means that given $t = t_0$, compute the </p>
 
 ]]></content>
   </entry>
