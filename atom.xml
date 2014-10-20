@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-17T21:01:09-07:00</updated>
+  <updated>2014-10-19T20:03:12-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Useful R functions]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/19/useful-r-functions/"/>
+    <updated>2014-10-19T19:59:42-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/19/useful-r-functions</id>
+    <content type="html"><![CDATA[<p>Some useful R functions: </p>
+
+<h2 id="dput-save-r"><code>dput</code>: save R</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+</pre></td><td class="code"><pre><code class="R"><span class="line">temp  <span class="o">=</span> <span class="kt">data.frame</span><span class="p">(</span>a <span class="o">=</span> rnorm<span class="p">(</span><span class="m">10</span><span class="p">),</span>b <span class="o">=</span> <span class="kc">LETTERS</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">])</span>
+</span><span class="line">temp
+</span><span class="line">            a b
+</span><span class="line"><span class="m">1</span>   <span class="m">1.9106530</span> A
+</span><span class="line"><span class="m">2</span>   <span class="m">0.5568481</span> B
+</span><span class="line"><span class="m">3</span>  <span class="m">-2.0955271</span> C
+</span><span class="line"><span class="m">4</span>  <span class="m">-0.4132244</span> D
+</span><span class="line"><span class="m">5</span>   <span class="m">0.4280722</span> E
+</span><span class="line"><span class="m">6</span>  <span class="m">-0.5981550</span> <span class="bp">F</span>
+</span><span class="line"><span class="m">7</span>   <span class="m">0.4110932</span> G
+</span><span class="line"><span class="m">8</span>  <span class="m">-0.8469106</span> H
+</span><span class="line"><span class="m">9</span>  <span class="m">-0.3415771</span> <span class="kp">I</span>
+</span><span class="line"><span class="m">10</span>  <span class="m">0.2930876</span> J
+</span><span class="line"><span class="kp">dput</span><span class="p">(</span>temp<span class="p">)</span>
+</span><span class="line"><span class="kp">structure</span><span class="p">(</span><span class="kt">list</span><span class="p">(</span>a <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">1.91065303013136</span><span class="p">,</span> <span class="m">0.556848072515929</span><span class="p">,</span> <span class="m">-2.09552705843547</span><span class="p">,</span>
+</span><span class="line"><span class="m">-0.413224404461701</span><span class="p">,</span> <span class="m">0.428072223420949</span><span class="p">,</span> <span class="m">-0.598155043699695</span><span class="p">,</span> <span class="m">0.411093231611976</span><span class="p">,</span>
+</span><span class="line"><span class="m">-0.846910593628984</span><span class="p">,</span> <span class="m">-0.341577057278408</span><span class="p">,</span> <span class="m">0.293087562336535</span><span class="p">),</span> b <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">,</span>
+</span><span class="line"><span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">,</span> <span class="s">&quot;D&quot;</span><span class="p">,</span> <span class="s">&quot;E&quot;</span><span class="p">,</span> <span class="s">&quot;F&quot;</span><span class="p">,</span> <span class="s">&quot;G&quot;</span><span class="p">,</span> <span class="s">&quot;H&quot;</span><span class="p">,</span> <span class="s">&quot;I&quot;</span><span class="p">,</span> <span class="s">&quot;J&quot;</span><span class="p">)),</span> <span class="m">.</span>Names <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">,</span>
+</span><span class="line"><span class="s">&quot;b&quot;</span><span class="p">),</span> row.names <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="kc">NA</span><span class="p">,</span> <span class="m">-10L</span><span class="p">),</span> class <span class="o">=</span> <span class="s">&quot;data.frame&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
