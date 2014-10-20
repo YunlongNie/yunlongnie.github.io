@@ -4,7 +4,7 @@
   <title><![CDATA[Category: r | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:03:12-07:00</updated>
+  <updated>2014-10-19T20:03:46-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Useful R functions]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/19/useful-r-functions/"/>
+    <updated>2014-10-19T19:59:42-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/19/useful-r-functions</id>
+    <content type="html"><![CDATA[<p>Some useful R functions: </p>
+
+<h2 id="dput-save-r"><code>dput</code>: save R</h2>
+
+<p><code>R
+temp  = data.frame(a = rnorm(10),b = LETTERS[1:10])
+temp
+            a b
+1   1.9106530 A
+2   0.5568481 B
+3  -2.0955271 C
+4  -0.4132244 D
+5   0.4280722 E
+6  -0.5981550 F
+7   0.4110932 G
+8  -0.8469106 H
+9  -0.3415771 I
+10  0.2930876 J
+dput(temp)
+structure(list(a = c(1.91065303013136, 0.556848072515929, -2.09552705843547, 
+-0.413224404461701, 0.428072223420949, -0.598155043699695, 0.411093231611976, 
+-0.846910593628984, -0.341577057278408, 0.293087562336535), b = c("A", 
+"B", "C", "D", "E", "F", "G", "H", "I", "J")), .Names = c("a", 
+"b"), row.names = c(NA, -10L), class = "data.frame")
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
