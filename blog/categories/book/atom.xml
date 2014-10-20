@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:31:17-07:00</updated>
+  <updated>2014-10-19T20:32:54-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -51,7 +51,10 @@ heightcoef = lsfit(basismat, heightmat, intercept=FALSE)$coef</p>
 heightList = smooth.basis(age, heightmat[,1:5], heightbasis12)
 (heightfd   = heightList$fd)
 (height.df  = heightList$df)
+[1] 12
 (height.gcv = heightList$gcv)
+   girl01    girl02    girl03    girl04    girl05 
+0.2513923 0.7977237 0.3340652 0.3085981 0.3479272 
 </code></p>
 
 ]]></content>
