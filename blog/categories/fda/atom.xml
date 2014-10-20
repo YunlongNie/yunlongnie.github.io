@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fda | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/fda/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T21:01:19-07:00</updated>
+  <updated>2014-10-19T21:02:07-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -61,7 +61,11 @@ heightList = smooth.basis(age, heightmat[,1:5], heightbasis12)
 
 <p>A measure of a function’s roughness is the integrated square second derivative or total curvature </p>
 
-<p><script type="math/tex"></script>PEN_2 (x) = \int [D^2x(t)]^2dt<script type="math/tex"></script></p>
+<p>$$</p>
+
+<script type="math/tex; mode=display">PEN_2 (x) = \int [D^2x(t)]^2dt</script>
+
+<p>$$</p>
 
 ]]></content>
   </entry>
