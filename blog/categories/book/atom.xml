@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:18:00-07:00</updated>
+  <updated>2014-10-19T20:22:11-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -23,7 +23,25 @@
 
 <p><script type="math/tex">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j,</script>
 Then <script type="math/tex">\mathbf{y}  = \mathbf{Phi} \mathbf{c} + \mathbf{epsilon}</script> 
-and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}</script></p>
+and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}.</script></p>
+
+<p>&#8220;`
+#  define the range
+Rng  = c(1,18)
+age     = growth$age
+agefine = seq(1,18,len=501)
+#  set up order 6 spline basis with 12 basis functions for
+#  fitting the growth data so as to estimate acceleration
+nbasis = 12;
+norder =  6;
+heightbasis12 = create.bspline.basis(ageRng, nbasis, norder)
+#  fit the data by least squares
+basismat   = eval.basis(age, heightbasis12)
+heightmat  = growth$hgtf
+heightcoef = lsfit(basismat, heightmat, intercept=FALSE)$coef</p>
+
+<h1 id="heightcoef-is-a-12--54-matrix-each-column-represents-the-ceofficients-for-12-basis-functions-for-each-boy">heightcoef is a 12 * 54 matrix. Each column represents the ceofficients for 12 basis functions for each boy.</h1>
+<p>&#8220;`</p>
 ]]></content>
   </entry>
   
