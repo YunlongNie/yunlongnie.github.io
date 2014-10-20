@@ -123,7 +123,7 @@ This is basically using least square to estimate the ceofficients &hellip;">
 Then <script type="math/tex">\mathbf{y}  = \mathbf{\Phi} \mathbf{c} + \mathbf{\epsilon}</script> 
 and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}.</script></p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -138,21 +138,22 @@ and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}
 <span class="line-number">13</span>
 <span class="line-number">14</span>
 <span class="line-number">15</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">#  define the range
-</span><span class="line">Rng  = c(1,18)
-</span><span class="line">age     = growth$age
-</span><span class="line">agefine = seq(1,18,len=501)
-</span><span class="line">#  set up order 6 spline basis with 12 basis functions for
-</span><span class="line">#  fitting the growth data so as to estimate acceleration
-</span><span class="line">nbasis = 12;
-</span><span class="line">norder =  6;
-</span><span class="line">heightbasis12 = create.bspline.basis(ageRng, nbasis, norder)
-</span><span class="line">#  fit the data by least squares
-</span><span class="line">basismat   = eval.basis(age, heightbasis12)
-</span><span class="line">heightmat  = growth$hgtf
-</span><span class="line">heightcoef = lsfit(basismat, heightmat, intercept=FALSE)$coef
+</pre></td><td class="code"><pre><code class="R"><span class="line"><span class="c1">#  define the range</span>
+</span><span class="line">Rng  <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">18</span><span class="p">)</span>
+</span><span class="line">age     <span class="o">=</span> growth<span class="o">$</span>age
+</span><span class="line">agefine <span class="o">=</span> <span class="kp">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">18</span><span class="p">,</span>len<span class="o">=</span><span class="m">501</span><span class="p">)</span>
+</span><span class="line"><span class="c1">#  set up order 6 spline basis with 12 basis functions for</span>
+</span><span class="line"><span class="c1">#  fitting the growth data so as to estimate acceleration</span>
+</span><span class="line">nbasis <span class="o">=</span> <span class="m">12</span><span class="p">;</span>
+</span><span class="line">norder <span class="o">=</span>  <span class="m">6</span><span class="p">;</span>
+</span><span class="line">heightbasis12 <span class="o">=</span> create.bspline.basis<span class="p">(</span>ageRng<span class="p">,</span> nbasis<span class="p">,</span> norder<span class="p">)</span>
+</span><span class="line"><span class="c1">#  fit the data by least squares</span>
+</span><span class="line">basismat   <span class="o">=</span> eval.basis<span class="p">(</span>age<span class="p">,</span> heightbasis12<span class="p">)</span>
+</span><span class="line">heightmat  <span class="o">=</span> growth<span class="o">$</span>hgtf
+</span><span class="line">heightcoef <span class="o">=</span> lsfit<span class="p">(</span>basismat<span class="p">,</span> heightmat<span class="p">,</span> intercept<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="o">$</span>coef
 </span><span class="line">
-</span><span class="line"># heightcoef is a 12 * 54 matrix. Each column represents the ceofficients for 12 basis functions for each boy. </span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line"><span class="c1"># heightcoef is a 12 * 54 matrix. Each column represents the ceofficients for 12 basis functions for each boy. </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </div>
 
 
