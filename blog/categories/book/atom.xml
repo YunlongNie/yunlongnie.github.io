@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:03:46-07:00</updated>
+  <updated>2014-10-19T20:16:01-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Chapter 5 estimating ceofficients from real data]]></title>
+    <link href="http://YunlongNie.github.io/blog/2014/10/19/chapter-5-estimating-ceofficients-from-real-data/"/>
+    <updated>2014-10-19T20:11:11-07:00</updated>
+    <id>http://YunlongNie.github.io/blog/2014/10/19/chapter-5-estimating-ceofficients-from-real-data</id>
+    <content type="html"><![CDATA[<h2 id="regression-approach">regression approach</h2>
+<p>This is basically using least square to estimate the ceofficients of spline functions. </p>
+
+<script type="math/tex; mode=display">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j </script>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapter 4 Bulid Functional Data Objects]]></title>
