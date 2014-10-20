@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:28:21-07:00</updated>
+  <updated>2014-10-19T20:31:17-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -45,7 +45,14 @@ heightcoef = lsfit(basismat, heightmat, intercept=FALSE)$coef</p>
 <h1 id="heightcoef-is-a-12--54-matrix-each-column-represents-the-coefficients-for-12-basis-functions-for-each-boy">heightcoef is a 12 * 54 matrix. Each column represents the coefficients for 12 basis functions for each boy.</h1>
 <p>&#8220;`</p>
 
-<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. </p>
+<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. It returns a <code>fd</code> object and several other things. </p>
+
+<p><code>R
+heightList = smooth.basis(age, heightmat[,1:5], heightbasis12)
+(heightfd   = heightList$fd)
+(height.df  = heightList$df)
+(height.gcv = heightList$gcv)
+</code></p>
 
 ]]></content>
   </entry>

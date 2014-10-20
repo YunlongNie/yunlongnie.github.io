@@ -4,7 +4,7 @@
   <title><![CDATA[A place for notes]]></title>
   <link href="http://YunlongNie.github.io/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:28:21-07:00</updated>
+  <updated>2014-10-19T20:31:17-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -59,7 +59,17 @@ and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}
 </span><span class="line"><span class="c1"># heightcoef is a 12 * 54 matrix. Each column represents the coefficients for 12 basis functions for each boy. </span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. </p>
+<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. It returns a <code>fd</code> object and several other things. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="R"><span class="line">heightList <span class="o">=</span> smooth.basis<span class="p">(</span>age<span class="p">,</span> heightmat<span class="p">[,</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">],</span> heightbasis12<span class="p">)</span>
+</span><span class="line"><span class="p">(</span>heightfd   <span class="o">=</span> heightList<span class="o">$</span>fd<span class="p">)</span>
+</span><span class="line"><span class="p">(</span>height.df  <span class="o">=</span> heightList<span class="o">$</span>df<span class="p">)</span>
+</span><span class="line"><span class="p">(</span>height.gcv <span class="o">=</span> heightList<span class="o">$</span>gcv<span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 ]]></content>
   </entry>
