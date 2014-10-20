@@ -4,7 +4,7 @@
   <title><![CDATA[Category: r | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:32:54-07:00</updated>
+  <updated>2014-10-19T21:00:35-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -57,6 +57,10 @@ heightList = smooth.basis(age, heightmat[,1:5], heightbasis12)
 0.2513923 0.7977237 0.3340652 0.3085981 0.3479272 
 </code></p>
 
+<h2 id="roughness-penalty">roughness penalty</h2>
+
+<p>A measure of a function’s roughness is the integrated square second derivative or total curvature 
+<script type="math/tex">PEN_2 (x) = \int [D^2x(t)]^2dt</script></p>
 ]]></content>
   </entry>
   
