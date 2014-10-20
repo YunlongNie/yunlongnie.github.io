@@ -3,12 +3,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Chapter 5 estimating ceofficients from real data - A place for notes</title>
+	<title>Chapter 5 estimating coefficients from real data - A place for notes</title>
 	<meta name="author" content="Ben(Yunlong)">
 
 	
-	<meta name="description" content="Chapter 5 Estimating Ceofficients From Real Data book, fda, r regression approach
-This is basically using least square to estimate the ceofficients &hellip;">
+	<meta name="description" content="Chapter 5 Estimating Coefficients From Real Data book, fda, r regression approach
+This is basically using least square to estimate the coefficients &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -92,7 +92,7 @@ This is basically using least square to estimate the ceofficients &hellip;">
 	
 	<div id="content" class="inner"><article class="post">
 	
-	<h2 class="title">Chapter 5 Estimating Ceofficients From Real Data</h2>
+	<h2 class="title">Chapter 5 Estimating Coefficients From Real Data</h2>
 	<div class="meta">
 		<div class="date" style="float:left;">
 
@@ -117,13 +117,13 @@ This is basically using least square to estimate the ceofficients &hellip;">
 		
 	</div>
 	<div class="entry-content" style="clear:both;"><h2 id="regression-approach">regression approach</h2>
-<p>This is basically using least square to estimate the ceofficients of spline functions. </p>
+<p>This is basically using least square to estimate the coefficients of spline functions. </p>
 
 <p><script type="math/tex">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j,</script>
 Then <script type="math/tex">\mathbf{y}  = \mathbf{\Phi} \mathbf{c} + \mathbf{\epsilon}</script> 
 and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}.</script></p>
 
-<p>We can use simple R functions lsfit to estimate the $\Phi$ as follows:</p>
+<p>We can use simple R functions <code>lsfit</code> to estimate the $\Phi$ as follows:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -154,8 +154,11 @@ and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}
 </span><span class="line">heightmat  <span class="o">=</span> growth<span class="o">$</span>hgtf
 </span><span class="line">heightcoef <span class="o">=</span> lsfit<span class="p">(</span>basismat<span class="p">,</span> heightmat<span class="p">,</span> intercept<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="o">$</span>coef
 </span><span class="line">
-</span><span class="line"><span class="c1"># heightcoef is a 12 * 54 matrix. Each column represents the ceofficients for 12 basis functions for each boy. </span>
+</span><span class="line"><span class="c1"># heightcoef is a 12 * 54 matrix. Each column represents the coefficients for 12 basis functions for each boy. </span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. </p>
+
 </div>
 
 

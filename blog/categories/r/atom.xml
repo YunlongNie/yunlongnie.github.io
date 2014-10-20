@@ -4,7 +4,7 @@
   <title><![CDATA[Category: r | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:24:20-07:00</updated>
+  <updated>2014-10-19T20:28:21-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -14,18 +14,18 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Chapter 5 estimating ceofficients from real data]]></title>
+    <title type="html"><![CDATA[Chapter 5 estimating coefficients from real data]]></title>
     <link href="http://YunlongNie.github.io/blog/2014/10/19/chapter-5-estimating-ceofficients-from-real-data/"/>
     <updated>2014-10-19T20:11:11-07:00</updated>
     <id>http://YunlongNie.github.io/blog/2014/10/19/chapter-5-estimating-ceofficients-from-real-data</id>
     <content type="html"><![CDATA[<h2 id="regression-approach">regression approach</h2>
-<p>This is basically using least square to estimate the ceofficients of spline functions. </p>
+<p>This is basically using least square to estimate the coefficients of spline functions. </p>
 
 <p><script type="math/tex">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j,</script>
 Then <script type="math/tex">\mathbf{y}  = \mathbf{\Phi} \mathbf{c} + \mathbf{\epsilon}</script> 
 and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}.</script></p>
 
-<p>We can use simple R functions lsfit to estimate the $\Phi$ as follows:</p>
+<p>We can use simple R functions <code>lsfit</code> to estimate the $\Phi$ as follows:</p>
 
 <p>&#8220;`R
 #  define the range
@@ -42,8 +42,11 @@ basismat   = eval.basis(age, heightbasis12)
 heightmat  = growth$hgtf
 heightcoef = lsfit(basismat, heightmat, intercept=FALSE)$coef</p>
 
-<h1 id="heightcoef-is-a-12--54-matrix-each-column-represents-the-ceofficients-for-12-basis-functions-for-each-boy">heightcoef is a 12 * 54 matrix. Each column represents the ceofficients for 12 basis functions for each boy.</h1>
+<h1 id="heightcoef-is-a-12--54-matrix-each-column-represents-the-coefficients-for-12-basis-functions-for-each-boy">heightcoef is a 12 * 54 matrix. Each column represents the coefficients for 12 basis functions for each boy.</h1>
 <p>&#8220;`</p>
+
+<p>Or there is a function in the <strong>fda</strong> package: <code>smooth.basis</code>. This function takes three arguments, $t_j, y_j$ and $\Phi$. That is, the support of the responses, the responses and the bspline basis system. </p>
+
 ]]></content>
   </entry>
   
