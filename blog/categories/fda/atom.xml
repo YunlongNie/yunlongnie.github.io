@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fda | A place for notes]]></title>
   <link href="http://YunlongNie.github.io/blog/categories/fda/atom.xml" rel="self"/>
   <link href="http://YunlongNie.github.io/"/>
-  <updated>2014-10-19T20:16:01-07:00</updated>
+  <updated>2014-10-19T20:18:00-07:00</updated>
   <id>http://YunlongNie.github.io/</id>
   <author>
     <name><![CDATA[Ben(Yunlong)]]></name>
@@ -21,7 +21,9 @@
     <content type="html"><![CDATA[<h2 id="regression-approach">regression approach</h2>
 <p>This is basically using least square to estimate the ceofficients of spline functions. </p>
 
-<script type="math/tex; mode=display">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j </script>
+<p><script type="math/tex">y_ j = x(t_j) + \epsilon_j = \phi'(t_j) \mathbf{c} + \epsilon_j,</script>
+Then <script type="math/tex">\mathbf{y}  = \mathbf{Phi} \mathbf{c} + \mathbf{epsilon}</script> 
+and <script type="math/tex">\hat{\mathbf{c}} = (\Phi'\Phi)^{-1} \Phi' \mathbf{y}</script></p>
 ]]></content>
   </entry>
   
